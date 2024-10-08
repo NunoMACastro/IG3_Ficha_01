@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-fluid">
+    
+    <!-- Nav Section -->
+    <div class="row bg-primary text-white">
+        <nav class="col-12 p-3 d-flex justify-content-between">
+            <!-- Nav content -->
+            <h1 class="text-center">Nav</h1>
+            <p class="text-center" id="breakpoint-info">Breakpoint: </p>
+    
+            <!-- Links to open modals -->
+            <div>
+                <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#modal1">Abrir Modal 1</a>
+                <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal2">Abrir Modal 2</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="row">
+        <div class="col-12 p-5 bg-secondary">
+            <!-- Carousel content -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banners/DarkKnight_Banner.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dark Knight</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banners/Interstellar_Banner.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Interstellar</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banners/RotK_Banner.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Return of the King</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="row">
+        <div class="col-12 p-5 bg-light">
+            <!-- Cards content -->
+            <h2 class="text-center">Cards</h2>
+
+            <!-- Cards grid -->
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/Dune2_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dune</h5>
+                            <p class="card-text">Descrição curta do card 1.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/Endegame_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Endgame</h5>
+                            <p class="card-text">Descrição curta do card 2.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/InfinityWar_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Infinity War</h5>
+                            <p class="card-text">Descrição curta do card 3.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/Interstellar_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Interstellar/h5>
+                            <p class="card-text">Descrição curta do card 4.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/MoS_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Man of Steel</h5>
+                            <p class="card-text">Descrição curta do card 5.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TDK_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Dark Knight</h5>
+                            <p class="card-text">Descrição curta do card 6.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards 7 a 12 apenas visíveis em tablets ou superiores (md ou lg) -->
+                <!-- Card 7 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TDKR_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Dark Knight Returns</h5>
+                            <p class="card-text">Descrição curta do card 7.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TFotR_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Fellowship of the Ring</h5>
+                            <p class="card-text">Descrição curta do card 8.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TGotG2_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guardians of the Galaxy 2</h5>
+                            <p class="card-text">Descrição curta do card 9.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TGotG3_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guardians of the Galaxy 3</h5>
+                            <p class="card-text">Descrição curta do card 10.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TRotK_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Return of the King</h5>
+                            <p class="card-text">Descrição curta do card 11.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block mb-4">
+                    <div class="card">
+                        <img src="images/thumbnails/TTT_Thumb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Two Towers</h5>
+                            <p class="card-text">Descrição curta do card 12.</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End of row -->
+        </div>
+    </div>
+
+        <!-- New Row with 3 divs -->
+        <div class="row">
+            <div class="col-lg-6 col-12 p-3 bg-info">
+                <!-- First div (6 columns on large, full-width on medium screens) -->
+                <h3 class="text-center text-white">Div 1 (6 col lg, 12 col md)</h3>
+            </div>
+            <div class="col-lg-3 col-12 p-3 bg-warning">
+                <!-- Second div (3 columns on large, full-width on medium screens) -->
+                <h3 class="text-center">Div 2 (3 col lg, 12 col md)</h3>
+            </div>
+            <div class="col-lg-3 d-none d-md-block p-3 bg-danger">
+                <!-- Third div (hidden on small screens, 3 columns on medium+) -->
+                <h3 class="text-center text-white">Div 3 (Hidden on small, 3 col lg)</h3>
+            </div>
+        </div>
+
+    <!-- Footer Section -->
+    <div class="row bg-dark text-white">
+        <footer class="col-12 p-3">
+            <!-- Footer content -->
+            <h3 class="text-center">Footer</h3>
+        </footer>
+    </div>
+
+    </div>
+
+    <!-- Modal 1-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário de Login -->
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nome de utilizador</label>
+                        <input type="text" class="form-control" id="username" placeholder="Insere o teu nome de utilizador">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Insere a tua password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" onclick="submitLogin()">Submeter</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateBreakpointInfo() {
+            const width = window.innerWidth;
+            const breakpointInfo = document.getElementById('breakpoint-info');
+            
+            if (width < 576) {
+                breakpointInfo.innerHTML = "Breakpoint: xs (extra small)";
+            } else if (width >= 576 && width < 768) {
+                breakpointInfo.innerHTML = "Breakpoint: sm (small)";
+            } else if (width >= 768 && width < 992) {
+                breakpointInfo.innerHTML = "Breakpoint: md (medium)";
+            } else if (width >= 992 && width < 1200) {
+                breakpointInfo.innerHTML = "Breakpoint: lg (large)";
+            } else if (width >= 1200 && width < 1400) {
+                breakpointInfo.innerHTML = "Breakpoint: xl (extra large)";
+            } else {
+                breakpointInfo.innerHTML = "Breakpoint: xxl (extra extra large)";
+            }
+        }
+    
+        // Atualiza o breakpoint na inicialização
+        updateBreakpointInfo();
+    
+        // Atualiza o breakpoint sempre que o tamanho da janela mudar
+        window.addEventListener('resize', updateBreakpointInfo);
+    </script>
+</body>
+</html>

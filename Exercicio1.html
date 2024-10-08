@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-fluid">
+    
+    <!-- Nav Section -->
+    <div class="row bg-primary text-white">
+        <nav class="col-12 p-3">
+            <!-- Nav content -->
+            <h1 class="text-center">Nav</h1>
+        </nav>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="row">
+        <div class="col-12 p-5 bg-secondary">
+            <!-- Carousel content -->
+            <h2 class="text-center text-white">Carousel</h2>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="row">
+        <div class="col-12 p-5 bg-light">
+            <!-- Cards content -->
+            <h2 class="text-center">Cards</h2>
+        </div>
+    </div>
+
+        <!-- New Row with 3 divs -->
+        <div class="row">
+            <div class="col-lg-6 col-12 p-3 bg-info">
+                <!-- First div (6 columns on large, full-width on medium screens) -->
+                <h3 class="text-center text-white">Div 1 (6 col lg, 12 col md)</h3>
+            </div>
+            <div class="col-lg-3 col-12 p-3 bg-warning">
+                <!-- Second div (3 columns on large, full-width on medium screens) -->
+                <h3 class="text-center">Div 2 (3 col lg, 12 col md)</h3>
+            </div>
+            <div class="col-lg-3 d-none d-md-block p-3 bg-danger">
+                <!-- Third div (hidden on small screens, 3 columns on medium+) -->
+                <h3 class="text-center text-white">Div 3 (Hidden on small, 3 col lg)</h3>
+            </div>
+        </div>
+
+    <!-- Footer Section -->
+    <div class="row bg-dark text-white">
+        <footer class="col-12 p-3">
+            <!-- Footer content -->
+            <h3 class="text-center">Footer</h3>
+        </footer>
+    </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateBreakpointInfo() {
+            const width = window.innerWidth;
+            const breakpointInfo = document.getElementById('breakpoint-info');
+            
+            if (width < 576) {
+                breakpointInfo.innerHTML = "Breakpoint: xs (extra small)";
+            } else if (width >= 576 && width < 768) {
+                breakpointInfo.innerHTML = "Breakpoint: sm (small)";
+            } else if (width >= 768 && width < 992) {
+                breakpointInfo.innerHTML = "Breakpoint: md (medium)";
+            } else if (width >= 992 && width < 1200) {
+                breakpointInfo.innerHTML = "Breakpoint: lg (large)";
+            } else if (width >= 1200 && width < 1400) {
+                breakpointInfo.innerHTML = "Breakpoint: xl (extra large)";
+            } else {
+                breakpointInfo.innerHTML = "Breakpoint: xxl (extra extra large)";
+            }
+        }
+    
+        // Atualiza o breakpoint na inicialização
+        updateBreakpointInfo();
+    
+        // Atualiza o breakpoint sempre que o tamanho da janela mudar
+        window.addEventListener('resize', updateBreakpointInfo);
+    </script>
+</body>
+</html>
